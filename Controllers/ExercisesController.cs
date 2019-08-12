@@ -36,8 +36,8 @@ namespace StudentExercisesMVC.Controllers
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"
-                        SELECT Id
-                        FROM Exercises
+                        SELECT Id, [Name], Language
+                        FROM Exercise
                     ";
                     SqlDataReader reader = cmd.ExecuteReader();
 
@@ -45,7 +45,9 @@ namespace StudentExercisesMVC.Controllers
                     {
                         Exercise exercise = new Exercise
                         {
-                            Id = reader.GetInt32(reader.GetOrdinal("Id"))
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            ExerciseName = reader.GetString(reader.GetOrdinal("Name")),
+                            Language = reader.GetString(reader.GetOrdinal("Language"))
                         };
 
                         exercises.Add(exercise);

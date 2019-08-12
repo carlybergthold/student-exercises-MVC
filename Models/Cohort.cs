@@ -9,6 +9,7 @@ namespace StudentExercisesMVC.Models
     public class Cohort
     {
         [Required]
+        [Key]
         public int Id { get; set; }
         [Required]
         public string CohortName { get; set; }
