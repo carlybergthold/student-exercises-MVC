@@ -107,15 +107,15 @@ namespace StudentExercisesMVC.Controllers
         public ActionResult Create(IFormCollection collection)
         {
             try
-            {
-                // TODO: Add insert logic here
+             {
+                 // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                 return RedirectToAction(nameof(Index));
+             }
+             catch
+             {
+                 return View();
+             }
         }
 
         // GET: Students/Edit/5

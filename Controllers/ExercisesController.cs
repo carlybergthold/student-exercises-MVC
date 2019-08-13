@@ -62,7 +62,34 @@ namespace StudentExercisesMVC.Controllers
         // GET: Exercises/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Exercise exercise = null;
+            using (SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        SELECT Id, [Name], Language
+                        FROM Exercise
+                        WHERE Id = @id
+                    ";
+                    cmd.Parameters.Add(new SqlParameter("@id", id));
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        exercise = new Exercise
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            ExerciseName = reader.GetString(reader.GetOrdinal("Name")),
+                            Language = reader.GetString(reader.GetOrdinal("Language"))
+                        };
+                    }
+
+                    reader.Close();
+                }
+            }
+            return View(exercise);
         }
 
         // GET: Exercises/Create

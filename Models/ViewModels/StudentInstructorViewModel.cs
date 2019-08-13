@@ -75,7 +75,8 @@ namespace StudentExercises.Models.ViewModels
                             Id,
                             FirstName,
                             LastName,
-                            SlackHandle
+                            SlackHandle,
+                            Specialty
                         FROM Instructor";
                     SqlDataReader reader = cmd.ExecuteReader();
 
