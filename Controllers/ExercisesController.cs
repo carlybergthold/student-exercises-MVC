@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using StudentExercises.Models.ViewModels;
 using StudentExercisesMVC.Models;
 
 namespace StudentExercisesMVC.Controllers
@@ -95,17 +96,39 @@ namespace StudentExercisesMVC.Controllers
         // GET: Exercises/Create
         public ActionResult Create()
         {
-            return View();
+            var viewModel = new ExerciseCreateViewModel(_config.GetConnectionString("DefaultConnection"));
+            return View(viewModel);
         }
 
         // POST: Exercises/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Exercise exercise)
         {
             try
             {
-                // TODO: Add insert logic here
+                using (SqlConnection conn = Connection)
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = conn.CreateCommand())
+                    {
+                        cmd.CommandText = @"
+                            INSERT INTO Exercise (
+                                [Name],
+                                Language
+                            ) VALUES (
+                                @name,
+                                @language
+                            )
+                        ";
+
+                        cmd.Parameters.AddWithValue("@name", exercise.ExerciseName);
+                        cmd.Parameters.AddWithValue("@language", exercise.Language);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
 
                 return RedirectToAction(nameof(Index));
             }

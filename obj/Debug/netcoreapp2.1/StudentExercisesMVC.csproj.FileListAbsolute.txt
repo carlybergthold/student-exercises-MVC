@@ -37,5 +37,8 @@ C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\D
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Details.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Index.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Details.g.cshtml.cs
-C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Students\Create.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Details.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Students\Create.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Create.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Create.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Create.g.cshtml.cs
