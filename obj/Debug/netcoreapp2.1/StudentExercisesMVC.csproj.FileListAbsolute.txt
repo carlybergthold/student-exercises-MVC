@@ -34,7 +34,6 @@ C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\D
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Index.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Index.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Students\Details.g.cshtml.cs
-C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Details.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Index.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Details.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Details.g.cshtml.cs
@@ -42,3 +41,10 @@ C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\D
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Create.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Exercises\Create.g.cshtml.cs
 C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Create.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Edit.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Delete.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Instructors\Details.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Students\Delete.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Students\Edit.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Edit.g.cshtml.cs
+C:\Users\imapl\Documents\Workspace\StudentExercisesMVC\StudentExercisesMVC\obj\Debug\netcoreapp2.1\Razor\Views\Cohorts\Delete.g.cshtml.cs

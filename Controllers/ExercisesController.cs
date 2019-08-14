@@ -79,7 +79,7 @@ namespace StudentExercisesMVC.Controllers
 
                     while (reader.Read())
                     {
-                        exercise = new Exercise
+                        exercise = new Exercise()
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             ExerciseName = reader.GetString(reader.GetOrdinal("Name")),
@@ -147,13 +147,30 @@ namespace StudentExercisesMVC.Controllers
         // POST: Exercises/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Exercise exercise)
         {
             try
             {
-                // TODO: Add update logic here
+                using (SqlConnection conn = Connection)
+                {
+                    conn.Open();
 
-                return RedirectToAction(nameof(Index));
+                    using (SqlCommand cmd = conn.CreateCommand())
+                    {
+                        cmd.CommandText = @"
+                            UPDATE Exercise
+                            SET [Name] = @name, Language = @language
+                            WHERE Id = @id
+                        ";
+
+                        cmd.Parameters.AddWithValue("@name", exercise.ExerciseName);
+                        cmd.Parameters.AddWithValue("@language", exercise.Language);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                    return RedirectToAction(nameof(Index));
             }
             catch
             {
